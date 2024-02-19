@@ -1,0 +1,128 @@
+:root {
+    /* Font-families */
+    --ff-primary: 'Roboto', sans-serif;
+    --ff-secondary: serif;
+
+    /* Font-sizes */
+    --fs-900: 9.375rem;
+    --fs-800: 6.25rem;
+    --fs-750: 4.5rem;
+    --fs-700: 3.5rem;
+    --fs-600: 2rem;
+    --fs-500: 1.75rem;
+    --fs-400: 1.125rem;
+    --fs-300: 1rem;
+    --fs-200: 0.875rem;
+
+    /* Colors */
+    --bg-primary: rgb(255, 255, 255);
+    --bg-secondary: rgb(226, 232, 240);
+    --font-color: rgb(137, 137, 137);
+    --font-title: rgb(0, 0, 0);
+    --accent: rgb(25, 146, 212);
+    --accent-lighter: rgb(240, 180, 41);
+}
+
+/* --------------------  */
+/* Reset                 */
+/* --------------------  */
+
+/* https://piccalil.li/blog/a-modern-css-reset/ */
+
+/* Box sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Reset margins */
+body,
+html,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+    margin: 0;
+}
+
+/* Utils classes */
+
+.grid {
+    display: grid;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+/* Typography */
+.ff-serif { font-family: var(--font-secondary); }
+.ff-roboto { font-family: var(--font-primary); }
+
+/* Font sizes */
+.fs-900 { font-size: var(--fs-900); }
+.fs-800 { font-size: var(--fs-800); }
+.fs-750 { font-size: var(--fs-750); }
+.fs-700 { font-size: var(--fs-700); }
+.fs-600 { font-size: var(--fs-600); }
+.fs-500 { font-size: var(--fs-500); }
+.fs-400 { font-size: var(--fs-400); }
+.fs-300 { font-size: var(--fs-300); }
+.fs-200 { font-size: var(--fs-200); }
+
+/* Background */
+.background__primary { background-color: var(--bg-primary); }
+.background__secondary {  background-color: var(--bg-secondary); }
+.background__accent { background-color: var(--accent); }
+
+/* Icons */
+
+.icon {
+    height: 25px;
+}
+
+.logo {
+    height: 70px;
+    width: 70px;
+}
+
+.user__image {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+
+.user__image__large {
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+}
+
+/* Specifics */
+
+.container {
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 4fr;
+}
+
+.header__container {
+    grid-column: 2 / 3;
+}
+
+.sidebar__container {
+    grid-row: 1 / 4;
+}
+
+.main__content__container {
+    grid-row: 2 / 4;
+    grid-column: 2 / 3;
+}
